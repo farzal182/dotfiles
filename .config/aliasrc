@@ -1,0 +1,76 @@
+#!/bin/sh
+## Common commands
+
+alias \
+    q='exit' \
+    c='clear' \
+    h='history' \
+    cs='clear; ls'\
+    p='cat' \
+    pd='pwd' \
+    ls='ls -ahl' \
+    lsa='ls -a' \
+    lsl='ls -l' \
+    t='time' \
+    k='kill' \
+    home='cd ~' \
+    ..='cd ..' \
+    ...='cd ..; cd ..'
+
+## config
+alias \
+    i3rc='vi ~/.config/i3/config' \
+    xrc='vi ~/.Xresources' \
+    merge='xrdb -merge ~/.Xresources' \
+    vimrc='vi ~/.vimrc' \
+    zshrc='vi ~/.zshrc; source ~/.zshrc' \
+    tmuxrc='vi ~/.tmux.conf' \
+    stcfg='sudo vi ~/.config/st/config.h' \
+    stload='cd ~/.config/st; sudo make && sudo make install' \
+    aliasrc='vi ~/.config/aliasrc' \
+    bsprc='vi ~/.config/bspwm/bspwmrc' \
+    sxhrc='vi ~/.config/sxhkd/sxhkdrc' \
+    ldmrc='sudo vi /etc/lightdm/lightdm.conf' \
+    repo='sudo vi /etc/apt/sources.list' \
+    aptcl='sudo apt autoclean && sudo apt clean' \
+    aptrm='sudo apt autoremove' \
+    aptupd='sudo apt update' \
+    aptupg='sudo apt update && sudo apt upgrade' \
+    pbar='vim ~/.config/polybar/config.ini' \
+    dualmonitor='xrandr --output LVDS --primary --mode 1366x768 --rotate normal --output VGA1 --mode 1366x768 --rotate normal --right-of LVDS1' \
+    dmenurc='cd ~/.config/dmenu; vim config.h' \
+
+## mysite config
+alias \
+    mysite='cd /var/www/farzal-space' \
+    dj='source ~/.virtualenv/django/bin/activate'
+
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+## git config
+alias addup='git add -u'
+alias addall='git add .'
+alias branch='git branch'
+alias checkout='git checkout'
+alias clone='git clone'
+alias commit='git commit -m'
+alias fetch='git fetch'
+alias pull='git pull origin'
+alias push='git push origin'
+alias stat='git status'  # 'status' is protected name so using 'stat' instead
+alias tag='git tag'
+alias newtag='git tag -a'
+
+# youtube-dl
+alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yta-best="youtube-dl --extract-audio --audio-format best "
+alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yta-opus="youtube-dl --extract-audio --audio-format opus "
+alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+alias ytv-best="youtube-dl -f bestvideo+bestaudio "

@@ -1,0 +1,36 @@
+!========================
+! Import from ~/.xrdb/color
+!========================
+#include "~/.xrdb/color/nord"
+!===============================
+
+!============
+! Configuration
+!============
+Xft.dpi:        96
+Xft.autohint:	0
+Xft.lcdfilter:	lcddefault
+Xft.hintstyle:	hintslight
+Xft.hinting:	1
+Xft.antialias:	1
+Xft.rgba:		rgb
+
+URxvt.termName:			        screen-256color
+URxvt.geometry: 	  	        70x24
+URxvt.letterSpace: 	  	        -1
+URxvt.lineSpace:      	  	    1
+URxvt.internalBorder:     	    15
+URxvt.font:                     xft:CodeNewRoman Nerd font:size=11:minspace=false, xft:M+ 1mn Nerd Font:bold:size=20
+URxvt.boldFont:                 xft:CodeNewRoman Nerd font:size=11:minsapce=false, xft:M+ 1mn Nerd Font:bold:size=20
+URxvt.scrollBar:                false
+URxvt.perl-ext-common:    	    default,clipboard,url-select,keyboard-select
+URxvt.keysym.Shift-Control-C:   eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V:   eval:paste_clipboard
+URxvt.keysym.Shift-Up:	  	    command:\033]720;1\007
+URxvt.keysym.Shift-Down:  	    command:\033]721;1\007
+URxvt.clipboard.autocopy:	    true
+URxvt.keysym.M-s:        	    perl:keyboard-select:search
+URxvt.keysym.M-u:        	    perl:url-select:select_next
+URxvt.keysym.C-equal:		    font-size:increase
+URxvt.keysym.C-minus:		    font-size:decrease
+URxvt.keysym.C-comma:		    font-size:reset
